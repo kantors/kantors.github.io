@@ -1,0 +1,25 @@
+{
+  "name": "portfolio_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kantors/kantors.github.io.git"
+},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kantors/kantors.github.io/issues"
+  },
+  "homepage": "https://github.com/kantors/kantors.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.0"
+  }
+}
