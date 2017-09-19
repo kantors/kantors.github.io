@@ -7,13 +7,30 @@ body {
 h1,
 h2,
 h3,
-h4,
 li {
   margin: 5px;
   font-family: 'Fjalla One', sans-serif; }
 
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em; }
+
+h4 {
+  margin: 5px;
+  font-weight: 900;
+  font-family: 'Open Sans', sans-serif; }
+
 p {
-  line-height: 1.5; }
+  margin: 5px;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: .9em; }
 
 h2 {
   font-size: 1.5em; }
@@ -72,14 +89,16 @@ a {
 * === HEADER STYLES ===
 */
 .header h1 {
-  font-size: 5.5em;
+  font-size: 6.5em;
   display: inline; }
 
 .header h1:first-child {
   margin-left: 45px; }
 
 .header h2 {
-  display: inline; }
+  display: inline;
+  font-size: 1.7em;
+  font-family: 'Fjalla One', sans-serif; }
 
 .header h2:first-child {
   margin-left: 455px; }
@@ -93,26 +112,37 @@ a {
 
 .header .right {
   position: relative;
-  width: 63%;
-  margin-left: 37%;
-  height: 72vh;
-  min-height: 470px; }
-
-.header .color-block {
-  right: 0;
-  width: 0;
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  background: #e8dccf;
+  width: 95%;
+  margin: 0 auto;
+  height: 80vh;
+  min-height: 470px;
+  overflow: hidden;
   -webkit-transition: width 0.5s ease-in-out;
   -moz-transition: width 0.5s ease-in-out;
   -o-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out; }
 
+.header .color-block {
+  background: white;
+  width: 100%;
+  text-align: left;
+  z-index: -1;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out; }
+
+.header .header-image {
+  width: 100%; }
+
 .header .sub-text-wrapper,
 .header .text-wrapper {
-  width: 50%;
+  width: 60%;
   height: 100px;
   margin: 150px auto;
   left: 0;
@@ -132,7 +162,7 @@ a {
 
 .header .sub-text-wrapper {
   width: 65%;
-  margin: 250px auto; }
+  margin: 280px auto; }
 
 @media only screen and (max-width: 1200px) {
   .header h1 {
@@ -208,7 +238,8 @@ a {
     width: 55%; }
     .about-section .text-wrapper h2 {
       font-size: 2em;
-      margin: 0; }
+      margin: 0;
+      font-family: 'Fjalla One', sans-serif; }
 
 .featured-wrapper {
   width: 100%; }
@@ -251,12 +282,209 @@ a {
     background: #f8f8f8; }
 
 /*
-* === Home ===
+* === Work Page ===
 */
+.work .portfolio {
+  position: relative;
+  top: 200px;
+  padding: 100px 10%;
+  opacity: 0; }
+  .work .portfolio h2 {
+    font-size: 2em; }
+  .work .portfolio h3 {
+    font-size: 1.5em;
+    color: #029494; }
+
 .work .portfolio-item {
+  width: 31%;
   display: inline-block;
-  width: 30%; }
-  .work .portfolio-item .portfolio-item-image {
-    width: 100%; }
-    .work .portfolio-item .portfolio-item-image img {
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .work .portfolio-item .portfolio-item-wrapper {
+    position: relative;
+    background: #fafafa;
+    cursor: pointer;
+    border: 2px solid #f2f2f2; }
+    .work .portfolio-item .portfolio-item-wrapper .portfolio-item-text {
+      opacity: 0;
+      position: absolute;
+      z-index: 10;
+      padding: 40px 20px; }
+    .work .portfolio-item .portfolio-item-wrapper .portfolio-item-image {
+      left: 60px;
+      top: 40px;
+      height: 300px;
+      border: 1px solid #efefef;
+      position: relative; }
+      .work .portfolio-item .portfolio-item-wrapper .portfolio-item-image img {
+        position: absolute;
+        width: 109%;
+        opacity: 0.9; }
+
+.hideme {
+  opacity: 0;
+  position: relative;
+  top: 30px;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000; }
+
+/*
+* === Portfolio Page ===
+*/
+.portfolio-page .hidden-header {
+  opacity: 0;
+  padding-top: 50px;
+  -webkit-transition: opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, padding 0.5s ease-in-out; }
+  .portfolio-page .hidden-header img {
+    margin-top: 50px;
+    -webkit-transition: opacity 0.5s ease-in-out, margin 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out,  margin 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, margin 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out,  margin 0.5s ease-in-out; }
+
+.portfolio-page .slide-up {
+  padding-top: 0;
+  opacity: 1; }
+  .portfolio-page .slide-up img {
+    margin-top: 0; }
+
+.portfolio-page .portfolio-header {
+  color: white;
+  position: relative;
+  height: 90vh;
+  overflow: hidden; }
+  .portfolio-page .portfolio-header .text-wrapper {
+    width: 50%;
+    padding: 170px 14%; }
+    .portfolio-page .portfolio-header .text-wrapper h1 {
+      margin: 0 0 10px;
+      font-size: 4em; }
+  .portfolio-page .portfolio-header .image-wrapper {
+    width: 25%;
+    max-height: 450px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    bottom: -35px;
+    padding: 35px;
+    right: 14%; }
+    .portfolio-page .portfolio-header .image-wrapper img {
+      -webkit-box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
       width: 100%; }
+
+.portfolio-page .button {
+  background: white;
+  width: 170px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 22px 0; }
+
+.portfolio-page .image-section:nth-child(odd) {
+  text-align: right; }
+
+.portfolio-page .image-section {
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 75px; }
+  .portfolio-page .image-section img {
+    width: 60%;
+    -webkit-box-shadow: 0 0 13px 2px rgba(230, 230, 230, 0.8);
+    -moz-box-shadow: 0 0 13px 2px rgba(230, 230, 230, 0.8);
+    box-shadow: 0 0 13px 2px rgba(230, 230, 230, 0.8); }
+  .portfolio-page .image-section .line {
+    width: 61px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 9px; }
+  .portfolio-page .image-section h2 {
+    position: absolute;
+    top: -10px;
+    left: -30px; }
+
+.portfolio-page .section {
+  margin: 130px 40px; }
+  .portfolio-page .section .text-wrapper {
+    width: 70%;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto; }
+    .portfolio-page .section .text-wrapper .sub-section {
+      display: inline-block;
+      padding: 10px 25px 12px 0; }
+
+.zealery .portfolio-header {
+  background: #0fb28b; }
+
+.graphic-design .portfolio-header {
+  background: #1e66ee; }
+
+.macro-market .portfolio-header {
+  background: #313d68; }
+  .macro-market .portfolio-header .image-wrapper {
+    width: 65%; }
+
+.deschutes-river .portfolio-header {
+  background: #e24f4b; }
+  .deschutes-river .portfolio-header .image-wrapper {
+    width: 65%; }
+
+.deschutes-river .portfolio-header .text-wrapper,
+.macro-market .portfolio-header .text-wrapper {
+  padding: 170px 5%; }
+
+.deschutes-river .portfolio-header .image-wrapper,
+.macro-market .portfolio-header .image-wrapper {
+  right: -12%;
+  bottom: -40px; }
+
+@media only screen and (max-width: 950px) {
+  .portfolio-page .portfolio-header .image-wrapper {
+    width: 33%;
+    right: 8%; }
+  .portfolio-page .portfolio-header .text-wrapper {
+    padding: 170px 8%; } }
+
+@media only screen and (max-width: 780px) {
+  .portfolio-page .portfolio-header {
+    height: 95vh; }
+    .portfolio-page .portfolio-header .image-wrapper {
+      width: 300px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -130px; }
+    .portfolio-page .portfolio-header .text-wrapper {
+      padding: 0;
+      width: 90%;
+      margin: 105px auto; }
+  .portfolio-page .section {
+    margin: 130px 5%; }
+    .portfolio-page .section .text-wrapper {
+      width: 100%; }
+  .portfolio-page .image-section {
+    width: 90%; } }
+
+@media only screen and (max-width: 450px) {
+  .portfolio-page .portfolio-header {
+    height: 100vh;
+    min-height: 560px; }
+    .portfolio-page .portfolio-header .text-wrapper h1 {
+      font-size: 2.3em; }
+    .portfolio-page .portfolio-header .image-wrapper {
+      width: 60%;
+      bottom: -50px; }
+  .deschutes-river .portfolio-header .image-wrapper {
+    bottom: 50px;
+    width: 100%;
+    right: -125px; }
+  .macro-market .portfolio-header .image-wrapper {
+    bottom: 50px;
+    width: 100%;
+    right: -125px; } }

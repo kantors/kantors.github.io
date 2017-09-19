@@ -9,9 +9,9 @@ var playing = false;
 
 var song, analyzer;
 
-// function preload() {
-//     // song = loadSound('../assets/song3.mp3');
-// }
+function preload() {
+    song = loadSound('../assets/song3.mp3');
+}
 
 function rotateCircle() {
     translate(490, -100);
