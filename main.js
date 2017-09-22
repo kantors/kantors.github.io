@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
     $("#work-link").click(function() {
-        var offset = 50; //Offset of 20px
+        var offset = 70; //Offset of 20px
 
         $('html, body').animate({
             scrollTop: $("#work-section").offset().top + offset
