@@ -2,25 +2,42 @@ $(document).ready(function() {
 
     /********HEADER ANIMATION********/
     setTimeout(function() {
-        $(".header .text-wrapper .text").css("width", "100%");
-
-    }, 700);
-    setTimeout(function() {
-        $(".header .sub-text-wrapper .text").css("width", "100%");
-    }, 1000);
-
-    setTimeout(function() {
         $(".header .color-block").css("width", "0%");
 
-    }, 200);
+    }, 250);
+
+    setTimeout(function() {
+        $(".header .text-wrapper .text").css("width", "100%");
+
+    }, 900);
+    setTimeout(function() {
+        $(".header .sub-text-wrapper .text").css("width", "100%");
+    }, 1200);
+    setTimeout(function() {
+        $(".header .arrow-wrapper ").addClass("visible-arrow");
+
+    }, 1700);
+    setTimeout(function() {
+              // $(".header .arrow-wrapper .about-me ").addClass("bounce");
+
+    }, 2200);
+
+
+    $("#work-link").click(function() {
+        var offset = 50; //Offset of 20px
+
+        $('html, body').animate({
+            scrollTop: $("#work-section").offset().top + offset
+        }, 700);
+    });
 
     /********NAVIGATION ANIMATION********/
     var lastScrollTop = 0;
     $(window).scroll(function() {
         var st = $(this).scrollTop();
 
-    
-        if (st > 300) {
+
+        if (st > 200) {
             $(".navigation").addClass("hoverable");
         } else {
             $(".navigation").removeClass("hoverable");

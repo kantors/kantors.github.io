@@ -3,12 +3,22 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=0">
     <title>Music Visualizer</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../main.js"></script>
+    <script src="../js/portfolio.js"></script>
 
     <script src="https://use.typekit.net/jkz5lja.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
     <style>
-
         #wrapper {
             text-align: center;
             padding-top: 100px;
@@ -25,55 +35,45 @@
 
         #controls div {
             margin-top: 5px;
-
         }
-
-
     </style>
 </head>
 
 <body>
-<div id="loader"></div>
-
-<nav class="navigation">
-    <ul class="nav-elements">
-        <li id="hamburger">
-            <div>
-                <span></span>
-                <span></span>
-                <span></span>
+    <div id="loader"></div>
+    <div class="content-wrapper macro-market portfolio-page">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="../index.html"><img src="../assets/logo.svg"></a>
+                    </img>
+                </li>
+                <li class="link"><a href="work.html">Work</a></li>
+                <li class="link">Resume</li>
+            </ul>
+        </div>
+        <div id="wrapper" class="music-main">
+            <div id="music-container"></div>
+            <div id="controls">
+                <div id="play"></div>
+                <div id="invert"></div>
+                <div id="sliderR"></div>
+                <div id="sliderB"></div>
+                <div id="sliderG"></div>
             </div>
-        </li>
-        <li id="name"><a href="http://www.sabrinakantor.com">Sabrina Kantor</a></li>
-        <li class="right-nav"><a id="about-nav" href="http://www.sabrinakantor.com#about">About</a></li>
-        <li class="right-nav"><a href="http://www.sabrinakantor.com/work.html">Work</a></li>
-    </ul>
 
-</nav>
-<div id="wrapper" class="music-main">
-    <div id="music-container"></div>
-    <div id="controls">
-        <div id="play"></div>
-        <div id="invert"></div>
-        <div id="sliderR"></div>
-        <div id="sliderB"></div>
-        <div id="sliderG"></div>
+        </div>
+
+
+
+        <div class="section text-section ">
+            <div class="text-wrapper">
+                <p>This is a music visualizer that I created using a javascript libary called p5. Using the P5 sound libary I was able to choose a sampling of frequencies that I then mapped to each line. The length of each line corresponds to the amplitude
+                    of each frequency. The distance that the dot at the end of the line travels corresponds to the overall amplitude of the music. Press play and mess around with the sliders and invert button! </p>
+            </div>
+
+        </div>
     </div>
-
-</div>
-
-
-
-<div class="section text-section ">
-    <div class="text-wrapper">
-        <p>This is a music visualizer that I created using a javascript libary called p5. Using the P5 sound libary I was able
-            to choose a sampling of frequencies that I then mapped to each line. The length of each line corresponds to the
-            amplitude of each frequency. The distance that the dot at the end of the line travels corresponds to the overall
-            amplitude of the music. Press play and mess around with the sliders and invert
-            button! </p>
-    </div>
-
-</div>
 
 </body>
 

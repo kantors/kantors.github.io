@@ -15,15 +15,17 @@
     <div class="content-wrapper">
         <div class="navigation">
             <ul>
-                <li><a href="index.html"><img src="assets/logo.svg"></a></img>
+                <li>
+                    <a href="index.html"><img src="assets/logo.svg"></a>
+                    </img>
                 </li>
-                <li class="link"><a href="work.html">Work</a></li>
+                <li id="work-link" class="link">Work</li>
                 <li class="link"><a>Resume</a></li>
             </ul>
         </div>
         <div class="content">
             <div class="header">
-                 <!-- <img class="logo" src="assets/logo2.svg"></img> -->
+                <!-- <img class="logo" src="assets/logo2.svg"></img> -->
 
                 <div class="outline"></div>
                 <div class="text-wrapper">
@@ -37,64 +39,106 @@
                     </div>
                 </div>
                 <div class="right">
-                    <!-- <img class="header-image"src="assets/new.png"></img> -->
+                    <div class="header-image-wrapper">
+                        <img class="header-image" src="assets/ok1.png"></img>
+                    </div>
                     <div class="color-block"></div>
                 </div>
-                <div class="line"></div>
+                <div class="arrow-wrapper">
+                    <div class="about-me">
+                        <p>about me</p>
+                    </div>
+                    <div class="line"></div>
+                </div>
             </div>
             <div class="about-section">
                 <div class="text-wrapper">
-                    <h2>Hello,</h2>
-                    <p>I'm Sabrina Kantor, a Designer and Developer living in Boston. I am currently pursuing a degree in
-                        Computer Science and Interactive media at Northeastern University.
-                        I am passionate about exploring the intersection of art, design and technology. Take a look at
-                        my work.</p>
-
+                      <div class="title-wrapper"><h2>Hello,</h2></div>
+                    <p>I'm Sabrina Kantor, a Designer and Developer living in Boston. I am currently pursuing a degree in Computer Science and Interactive media at Northeastern University. I am passionate about exploring the intersection of art, design and
+                        technology. Take a look at my work.</p>
+                        <img class="icon" src="assets/github-icon.svg"></img>
+                        <img class="icon" src="assets/linkedin-icon.svg"></img>
                 </div>
             </div>
 
-            <div class="featured-wrapper">
-              <div class="project-wrapper">
-                        <a href="work/deschutes-river-guide.html">
-                  <div class="project deschutes">
-                      <div class="image-wrapper">
-                          <img class="thumbnail" src="work/images/deschutes-river-guide-main.png"></img>
-                      </div>
-                      <div class="text-wrapper">
-                          <h4 class="label">Design & Development</h4>
-                          <h3>Deschutes River Guide</h3>
-                      </div>
-                  </div>
-                </a>
-              </div>
-                <div class="project-wrapper">
-                    <a href="work/macro-market.html">
-                        <div class="project macro">
-                            <div class="image-wrapper">
-                                <img class="thumbnail" src="work/images/macro-market-main.png"></img>
-                            </div>
-                            <div class="text-wrapper">
-                                <h4 class="label">Development</h4>
-                                <h3>Macro Market</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-wrapper">
-                    <a href="work/zealery.html">
-                        <div class="project zealery">
-                            <div class="image-wrapper">
+            <div id="work-section" class="portfolio">
 
-                                <img class="thumbnail" src="work/images/zealery-main.png"></img>
+                <div id="deschutes" class="project portfolio-item">
+                    <a href="http://www.sabrinakantor.com/work/deschutes-river-guide.html">
+                        <div class="portfolio-item-text">
+                          <p>Design & Development</p>
+                            <h1>Deschutes River </br> Guide</h1>
+                            <div class="view-work">
+                              <p>view work</p>
+                            <div class="line"></div></div>
                             </div>
-                            <div class="text-wrapper">
-                                <h4 class="label">Design & Development</h4>
-                                <h3>Zealery</h3>
-                            </div>
+                        <div class=" portfolio-item-image ">
+                            <img src="work/images/deschutes-river-guide-main.png">
+                            <img src="work/images/deschutes-2.png">
                         </div>
+                        < </a>
+                </div>
+                <div id="zealery" class="project portfolio-item">
+                    <a href="http://www.sabrinakantor.com/work/zealery.html">
+
+                        <div class="portfolio-item-text">
+                            <p>Design & Development</p>
+                            <h1>Zealery </h1>
+                            <div class="view-work">
+                              <p>view work</p>
+                            <div class="line"></div></div>
+                          </div>
+                        <div class=" portfolio-item-image ">
+                            <img src="work/images/zealery-main.png">
+                        </div>
+
                     </a>
                 </div>
 
+                <div id="macro" class="project portfolio-item">
+                    <a href="http://www.sabrinakantor.com/work/macro-market.html">
+                        <div class="portfolio-item-text">
+                            <p>Development</p>
+                            <h1>Macro Market</h1>
+                            <div class="view-work">
+                              <p>view work</p>
+                            <div class="line"></div></div>
+                            </div>
+                        <div class="portfolio-item-image ">
+                            <img src="work/images/macro-market-main.png">
+                        </div>
+                    </a>
+                </div>
+                <div id="music-visualizer" class="project portfolio-item">
+                    <a href="http://www.sabrinakantor.com/work/graphic-design.html">
+                        <div class="portfolio-item-text">
+                            <p>Design & Development</p>
+                            <h1>Music Visualizer</h1>
+                            <div class="view-work">
+                              <p>view work</p>
+                            <div class="line"></div></div>
+                          </div>
+                        <div class=" portfolio-item-image ">
+                            <img src="work/images/music-visualizer-main.jpg">
+                        </div>
+
+                    </a>
+                </div>
+
+                <div id="graphic-design" class="project portfolio-item">
+                    <a href="http://www.sabrinakantor.com/work/graphic-design.html">
+                        <div class="portfolio-item-text">
+                            <p>Design</p>
+                            <h1>Graphic Design</h1>
+                            <div class="view-work">
+                              <p>view work</p>
+                            <div class="line"></div></div>
+                        </div>
+                        <div class=" portfolio-item-image ">
+                            <img src="work/images/run.jpg">
+                        </div>
+                    </a>
+                </div>
 
             </div>
         </div>
