@@ -613,7 +613,7 @@ a {
   .portfolio-page .info-wrapper .sub-section h2 {
     text-transform: uppercase;
     font-size: 0.9em;
-    font-size: 900; }
+    font-weight: 900; }
   .portfolio-page .info-wrapper .sub-section p {
     font-size: 1.2em; }
 
@@ -737,13 +737,32 @@ a {
     width: 90%; }
 
 .deschutes-river .portfolio-header .text-wrapper,
-.macro-market .portfolio-header .text-wrapper {
+.macro-market .portfolio-header .text-wrapper,
+.music-visualizer .portfolio-header .text-wrapper {
   padding: 170px 5%; }
 
 .deschutes-river .portfolio-header .image-wrapper,
-.macro-market .portfolio-header .image-wrapper {
+.macro-market .portfolio-header .image-wrapper,
+.music-visualizer .portfolio-header .image-wrapper {
   right: -12%;
   bottom: -40px; }
+
+.music-visualizer .portfolio-header {
+  background: #5785ff; }
+  .music-visualizer .portfolio-header .text-wrapper {
+    z-index: 10;
+    position: relative; }
+  .music-visualizer .portfolio-header .image-wrapper {
+    width: 65%; }
+    .music-visualizer .portfolio-header .image-wrapper img {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+
+.music-visualizer .image-section {
+  width: 60%; }
+  .music-visualizer .image-section img {
+    width: 90%; }
 
 @media only screen and (max-width: 950px) {
   .portfolio-page .portfolio-header .image-wrapper {
