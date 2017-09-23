@@ -769,7 +769,13 @@ a {
     width: 33%;
     right: 8%; }
   .portfolio-page .portfolio-header .text-wrapper {
-    padding: 170px 8%; } }
+    padding: 170px 8%; }
+  .music-visualizer.portfolio-page .portfolio-header .image-wrapper {
+    width: 75%;
+    right: -35px;
+    max-width: none;
+    bottom: 0;
+    padding: 0; } }
 
 @media only screen and (max-width: 780px) {
   .portfolio-page .portfolio-header {
@@ -870,4 +876,6 @@ a {
     padding: 40px 0; }
     .graphic-design .section .text-wrapper p {
       line-height: 1.7;
-      width: 98%; } }
+      width: 98%; }
+  .music-visualizer.portfolio-page .portfolio-header .image-wrapper {
+    width: 125%; } }
