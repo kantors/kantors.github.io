@@ -20,7 +20,7 @@ function rotateCircle() {
 
 function setup() {
   var width = window.innerWidth;
-    var myCanvas = createCanvas(width * .85, 500);
+    var myCanvas = createCanvas(400, 600);
     myCanvas.parent("music-container");
 
 
