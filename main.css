@@ -364,6 +364,15 @@ a {
   .featured-wrapper .project-wrapper:nth-child(even) .project {
     background: #f8f8f8; }
 
+@media (max-width: 450px) {
+  .about-section {
+    height: 555px;
+    margin: 30px auto;
+    width: 95%; }
+    .about-section .text-wrapper {
+      padding: 75px 0;
+      width: 88%; } }
+
 /*
 * === Work Page ===
 */
@@ -660,7 +669,7 @@ a {
   margin-top: 50px;
   padding: 0;
   background: none;
-  height: fit-content; }
+  height: auto; }
 
 .zealery .portfolio-header {
   background: #0fb28b; }
