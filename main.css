@@ -1,5 +1,6 @@
 body {
-  margin: 0; }
+  margin: 0;
+  position: relative; }
 
 /*
 * === OVERIDE STYLES ===
@@ -450,7 +451,9 @@ a {
   .portfolio #deschutes {
     width: 59%;
     margin: 1% 1% 1% 0;
-    background: #d8cfc7; }
+    background: #d8cfc7;
+    margin-right: -6px;
+    margin-bottom: 1%; }
     .portfolio #deschutes img:nth-child(1) {
       z-index: 1;
       right: 10%;
@@ -466,22 +469,21 @@ a {
   .portfolio #zealery {
     width: 40%;
     background: #0fb28b;
-    margin-right: -6px;
-    margin-bottom: 1%; }
+    margin: 1% 1% 1% 0; }
     .portfolio #zealery img {
       width: 35%;
       bottom: -25px;
       right: 10%; }
   .portfolio #graphic-design {
     background: #f2f2f2;
-    width: 32%;
-    margin-right: -28px; }
+    width: 33%; }
     .portfolio #graphic-design img {
       width: 45%;
       right: 10%; }
   .portfolio #macro {
-    width: 33%;
-    background: #313d68; }
+    background: #313d68;
+    width: 32%;
+    margin-right: -28px; }
     .portfolio #macro img {
       width: 118%;
       right: -30%;
@@ -879,3 +881,11 @@ a {
       width: 98%; }
   .music-visualizer.portfolio-page .portfolio-header .image-wrapper {
     width: 125%; } }
+
+#p5_loading {
+  font-size: 1.3em;
+  margin: -125px auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Open Sans'; }

@@ -19,8 +19,8 @@ function rotateCircle() {
 }
 
 function setup() {
-  var width = window.innerWidth;
-    var myCanvas = createCanvas(400, 600);
+  var width = document.getElementById('foo').offsetWidth
+    var myCanvas = createCanvas(600, 400);
     myCanvas.parent("music-container");
 
 
@@ -159,7 +159,7 @@ function draw() {
 
     //INVERTS COLOR
     if (!invert) {
-        background(255);
+        background(240);
     } else {
         background(color(valR, valG, valB));
         circleColor = color(240);
