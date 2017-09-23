@@ -775,6 +775,8 @@ a {
 @media only screen and (max-width: 450px) {
   .portfolio-page .button {
     margin: 15px 0; }
+  .portfolio-page .section .text-wrapper p {
+    width: 100%; }
   .portfolio-page .portfolio-header {
     height: 90vh;
     min-height: 550px; }
@@ -804,20 +806,22 @@ a {
     max-width: none; }
   .zealery .portfolio-header .text-wrapper h1 {
     font-size: 4em; }
-  .zealery .image-section img {
-    width: 70%;
-    margin: 0 auto;
-    display: block; }
-  .zealery .image-section .two-images img:nth-child(2) {
-    width: 55%;
-    left: 0; }
-  .zealery .image-section .two-images-horizontal .section-image:nth-child(1) {
-    width: 100%; }
-  .zealery .image-section .two-images-horizontal .section-image:nth-child(2) {
-    right: 0;
-    left: auto;
-    top: -60px;
-    width: 60%; }
+  .zealery .image-section {
+    width: 80%; }
+    .zealery .image-section img {
+      width: 70%;
+      margin: 0 auto;
+      display: block; }
+    .zealery .image-section .two-images img:nth-child(2) {
+      width: 55%;
+      left: 0; }
+    .zealery .image-section .two-images-horizontal .section-image:nth-child(1) {
+      width: 100%; }
+    .zealery .image-section .two-images-horizontal .section-image:nth-child(2) {
+      right: 0;
+      left: auto;
+      top: -60px;
+      width: 60%; }
   .macro-market .portfolio-header .image-wrapper {
     bottom: 50px;
     width: 100%;
