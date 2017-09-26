@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
     $("#work-link").click(function() {
-        var offset = 70; //Offset of 20px
+        var offset = 20; //Offset of 20px
 
         $('html, body').animate({
             scrollTop: $("#work-section").offset().top + offset
@@ -52,6 +52,7 @@ $(document).ready(function() {
             }, 260);
 
         }
+
         if (st < lastScrollTop - 15) {
             // upscroll code
             $(".navigation ul").css("width", "185px");
