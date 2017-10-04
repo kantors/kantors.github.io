@@ -1,26 +1,38 @@
+// ==UserScript==
+// @name          Test
+// @namespace     Test
+// @include       *
+// ==/UserScript==
+
+window.addEventListener('load', function(){
+  setTimeout(function() {
+      $(".header .color-block").css("width", "0%");
+
+  }, 450);
+
+  setTimeout(function() {
+      $(".header .text-wrapper .text").css("width", "100%");
+
+  }, 1100);
+  setTimeout(function() {
+      $(".header .sub-text-wrapper .text").css("width", "100%");
+  }, 1400);
+  setTimeout(function() {
+      $(".header .arrow-wrapper ").addClass("visible-arrow");
+
+  }, 1900);
+  setTimeout(function() {
+      // $(".header .arrow-wrapper .about-me ").addClass("bounce");
+
+  }, 2400);
+
+
+}, false);
+
 $(document).ready(function() {
 
     /********HEADER ANIMATION********/
-    setTimeout(function() {
-        $(".header .color-block").css("width", "0%");
 
-    }, 450);
-
-    setTimeout(function() {
-        $(".header .text-wrapper .text").css("width", "100%");
-
-    }, 1100);
-    setTimeout(function() {
-        $(".header .sub-text-wrapper .text").css("width", "100%");
-    }, 1400);
-    setTimeout(function() {
-        $(".header .arrow-wrapper ").addClass("visible-arrow");
-
-    }, 1900);
-    setTimeout(function() {
-        // $(".header .arrow-wrapper .about-me ").addClass("bounce");
-
-    }, 2400);
 
     $("#work-link").click(function() {
         var offset = 20; //Offset of 20px
