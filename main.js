@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).on("load", function() {
 
     /********HEADER ANIMATION********/
     setTimeout(function() {
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
             /* If the object is completely visible in the window, fade it it */
             if (bottom_of_window > top_of_object) {
-                $(this).delay(500).animate({
+                $(this).delay(100).animate({
                     opacity: 1,
                     top: '0'
                 }, 500);

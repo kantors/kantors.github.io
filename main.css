@@ -404,7 +404,7 @@ a {
 */
 .portfolio {
   position: relative;
-  padding: 50px 5%; }
+  padding: 50px 5% 100px; }
   .portfolio margin:h2 {
     font-size: 2em; }
   .portfolio h3 {
