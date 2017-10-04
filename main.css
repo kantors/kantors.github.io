@@ -756,6 +756,8 @@ a {
   background: #d8cfc7; }
   .deschutes-river .portfolio-header .image-wrapper {
     width: 65%; }
+  .deschutes-river .portfolio-header h1 {
+    width: 90%; }
 
 .deschutes-river .image-section {
   width: 60%; }
@@ -801,7 +803,19 @@ a {
     right: -35px;
     max-width: none;
     bottom: 0;
-    padding: 0; } }
+    padding: 0; }
+  .macro-market.portfolio-page .portfolio-header .image-wrapper {
+    bottom: 0;
+    width: 50%;
+    right: -100px;
+    max-width: none; }
+  .deschutes-river.portfolio-page .portfolio-header .image-wrapper {
+    bottom: -50px;
+    width: 50%;
+    right: -130px;
+    max-width: none; }
+  .deschutes-river .portfolio-header h1 {
+    width: 100%; } }
 
 @media only screen and (max-width: 780px) {
   .portfolio-page .portfolio-header {
@@ -852,12 +866,12 @@ a {
     .portfolio-page .info-wrapper .sub-section {
       margin-bottom: 25px;
       display: block; }
-  .deschutes-river .portfolio-header .image-wrapper {
+  .deschutes-river.portfolio-page .portfolio-header .image-wrapper {
     bottom: -55px;
     width: 105%;
     right: -145px;
     max-width: none; }
-  .deschutes-river .portfolio-header .text-wrapper h1 {
+  .deschutes-river.portfolio-page .portfolio-header .text-wrapper h1 {
     font-size: 2.8em; }
   .zealery .portfolio-header .image-wrapper {
     bottom: -185px;
@@ -885,8 +899,7 @@ a {
       left: auto;
       top: -60px;
       width: 60%; }
-  .macro-market .portfolio-header .image-wrapper {
-    bottom: 0;
+  .macro-market.portfolio-page .portfolio-header .image-wrapper {
     width: 100%;
     right: -125px;
     max-width: none; }
