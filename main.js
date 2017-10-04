@@ -1,30 +1,26 @@
 $(document).ready(function() {
 
-    window.addEventListener("load", showPage);
+    /********HEADER ANIMATION********/
+    setTimeout(function() {
+        $(".header .color-block").css("width", "0%");
 
-    function showPage() {
-        /********HEADER ANIMATION********/
-        setTimeout(function() {
-            $(".header .color-block").css("width", "0%");
+    }, 450);
 
-        }, 450);
+    setTimeout(function() {
+        $(".header .text-wrapper .text").css("width", "100%");
 
-        setTimeout(function() {
-            $(".header .text-wrapper .text").css("width", "100%");
+    }, 1100);
+    setTimeout(function() {
+        $(".header .sub-text-wrapper .text").css("width", "100%");
+    }, 1400);
+    setTimeout(function() {
+        $(".header .arrow-wrapper ").addClass("visible-arrow");
 
-        }, 1100);
-        setTimeout(function() {
-            $(".header .sub-text-wrapper .text").css("width", "100%");
-        }, 1400);
-        setTimeout(function() {
-            $(".header .arrow-wrapper ").addClass("visible-arrow");
+    }, 1900);
+    setTimeout(function() {
+        // $(".header .arrow-wrapper .about-me ").addClass("bounce");
 
-        }, 1900);
-        setTimeout(function() {
-            // $(".header .arrow-wrapper .about-me ").addClass("bounce");
-
-        }, 2400);
-    }
+    }, 2400);
 
     $("#work-link").click(function() {
         var offset = 20; //Offset of 20px
