@@ -1,27 +1,30 @@
-$(window).on("load", function() {
+$(document).ready(function() {
 
-    /********HEADER ANIMATION********/
-    setTimeout(function() {
-        $(".header .color-block").css("width", "0%");
+    window.addEventListener("load", showPage);
 
-    }, 450);
+    function showPage() {
+        /********HEADER ANIMATION********/
+        setTimeout(function() {
+            $(".header .color-block").css("width", "0%");
 
-    setTimeout(function() {
-        $(".header .text-wrapper .text").css("width", "100%");
+        }, 450);
 
-    }, 1100);
-    setTimeout(function() {
-        $(".header .sub-text-wrapper .text").css("width", "100%");
-    }, 1400);
-    setTimeout(function() {
-        $(".header .arrow-wrapper ").addClass("visible-arrow");
+        setTimeout(function() {
+            $(".header .text-wrapper .text").css("width", "100%");
 
-    }, 1900);
-    setTimeout(function() {
-              // $(".header .arrow-wrapper .about-me ").addClass("bounce");
+        }, 1100);
+        setTimeout(function() {
+            $(".header .sub-text-wrapper .text").css("width", "100%");
+        }, 1400);
+        setTimeout(function() {
+            $(".header .arrow-wrapper ").addClass("visible-arrow");
 
-    }, 2400);
+        }, 1900);
+        setTimeout(function() {
+            // $(".header .arrow-wrapper .about-me ").addClass("bounce");
 
+        }, 2400);
+    }
 
     $("#work-link").click(function() {
         var offset = 20; //Offset of 20px
@@ -35,7 +38,6 @@ $(window).on("load", function() {
     var lastScrollTop = 0;
     $(window).scroll(function() {
         var st = $(this).scrollTop();
-
 
         if (st > 200) {
             $(".navigation").addClass("hoverable");
@@ -62,7 +64,6 @@ $(window).on("load", function() {
 
         }
 
-
         /********PORTFOLIO PAGE ANIMATION********/
         $('.hideme').each(function(i) {
             var top_of_object = $(this).offset().top + 10;
@@ -70,7 +71,7 @@ $(window).on("load", function() {
 
             /* If the object is completely visible in the window, fade it it */
             if (bottom_of_window > top_of_object) {
-                $(this).delay(100).animate({
+                $(this).delay(200).animate({
                     opacity: 1,
                     top: '0'
                 }, 500);
