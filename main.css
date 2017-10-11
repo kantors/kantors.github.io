@@ -324,6 +324,15 @@ a {
       margin-left: 0; } }
 
 /*
+* === HEADER STYLES ===
+*/
+.footer {
+  width: 95%;
+  margin: 100px auto;
+  border-top: 1px solid black;
+  height: 70px; }
+
+/*
 * === Home ===
 */
 .about-section {
@@ -652,6 +661,7 @@ a {
     vertical-align: top;
     margin-bottom: 10px; }
     .portfolio-page .info-wrapper .sub-section h2 {
+      font-family: 'Fira Sans', sans-serif;
       font-size: 1.2em;
       font-weight: 500; }
     .portfolio-page .info-wrapper .sub-section p {
