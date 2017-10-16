@@ -557,6 +557,10 @@ a {
   position: relative;
   top: 30px; }
 
+@media (min-width: 1800px) {
+  .portfolio .portfolio-item {
+    height: 650px; } }
+
 @media (min-width: 1600px) {
   .portfolio .portfolio-item {
     height: 575px; } }
@@ -835,6 +839,12 @@ a {
   width: 60%; }
   .music-visualizer .image-section img {
     width: 90%; }
+
+@media (min-width: 1600px) {
+  .portfolio-page .portfolio-header {
+    max-height: 1200px; }
+    .portfolio-page .portfolio-header .image-wrapper {
+      max-height: 600px; } }
 
 @media only screen and (max-width: 950px) {
   .portfolio-page .info-wrapper {
