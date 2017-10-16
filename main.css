@@ -217,40 +217,20 @@ a {
       width: 280px;
       margin-left: 560px; }
 
-.bounce {
-  animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  -moz-animation: bounce 2s infinite;
-  -o-animation: bounce 2s infinite; }
-
-@-webkit-keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0); }
-  40% {
-    -webkit-transform: translateY(-30px); }
-  60% {
-    -webkit-transform: translateY(-15px); } }
-
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1600px) {
+  .header .header-image {
+    width: 80%; }
   .header .text-wrapper {
-    width: 850px;
-    margin: 160px auto; }
+    width: 1000px;
+    margin: 320px auto; }
     .header .text-wrapper #name-image {
-      width: 850px; }
+      width: 1000px; }
   .header .sub-text-wrapper {
-    width: 850px;
-    margin: 315px auto; }
+    width: 1030px;
+    margin: 500px auto; }
     .header .sub-text-wrapper .text #title-image {
-      opacity: 0.6;
-      width: 370px;
-      margin-left: 465px; }
-  .header .logo {
-    left: 31%;
-    top: 80px; } }
+      width: 455px;
+      margin-left: 570px; } }
 
 @media only screen and (max-width: 1200px) {
   .header .text-wrapper {
