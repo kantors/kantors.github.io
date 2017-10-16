@@ -233,17 +233,17 @@ a {
 
 @media only screen and (min-width: 1500px) {
   .header .text-wrapper {
-    width: 900px;
-    margin: 200px auto; }
+    width: 850px;
+    margin: 160px auto; }
     .header .text-wrapper #name-image {
-      width: 900px; }
+      width: 850px; }
   .header .sub-text-wrapper {
-    width: 650px;
-    margin: 220px auto; }
+    width: 850px;
+    margin: 315px auto; }
     .header .sub-text-wrapper .text #title-image {
       opacity: 0.6;
-      width: 250px;
-      margin-left: 320px; }
+      width: 370px;
+      margin-left: 465px; }
   .header .logo {
     left: 31%;
     top: 80px; } }
@@ -343,6 +343,7 @@ a {
   .about-section .text-wrapper {
     padding: 120px 0 150px;
     width: 60%;
+    max-width: 770px;
     margin: 0 auto; }
     .about-section .text-wrapper h2 {
       font-size: 2.5em;
@@ -564,6 +565,10 @@ a {
   opacity: 0;
   position: relative;
   top: 30px; }
+
+@media (min-width: 1400px) {
+  .portfolio .portfolio-item {
+    height: 415px; } }
 
 @media (max-width: 650px) {
   .portfolio .portfolio-item {
