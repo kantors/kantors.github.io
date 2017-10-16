@@ -219,7 +219,8 @@ a {
 
 @media only screen and (min-width: 1600px) {
   .header .header-image {
-    width: 80%; }
+    width: 80%;
+    max-width: 1500px; }
   .header .text-wrapper {
     width: 1000px;
     margin: 320px auto; }
