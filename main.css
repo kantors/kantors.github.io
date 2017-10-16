@@ -557,17 +557,17 @@ a {
   position: relative;
   top: 30px; }
 
-@media (min-width: 1800px) {
-  .portfolio .portfolio-item {
-    height: 650px; } }
-
-@media (min-width: 1600px) {
-  .portfolio .portfolio-item {
-    height: 575px; } }
-
 @media (min-width: 1400px) {
   .portfolio .portfolio-item {
     height: 415px; } }
+
+@media (min-width: 1600px) {
+  .portfolio .portfolio-item {
+    height: 475px; } }
+
+@media (min-width: 1800px) {
+  .portfolio .portfolio-item {
+    height: 575px; } }
 
 @media (max-width: 650px) {
   .portfolio .portfolio-item {
