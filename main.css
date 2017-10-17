@@ -392,9 +392,12 @@ a {
     background: #f8f8f8; }
 
 @media (min-width: 1500px) {
-  .home .content {
-    margin: 0 auto;
-    width: 90%; } }
+  .home .about-section .text-wrapper {
+    max-width: 870px; }
+    .home .about-section .text-wrapper h2 {
+      font-size: 3.2em; }
+    .home .about-section .text-wrapper p {
+      font-size: 1.5em; } }
 
 @media (max-width: 790px) {
   .about-section .text-wrapper {
@@ -781,7 +784,8 @@ a {
   background: #1e66ee; }
 
 .graphic-design .image-section {
-  width: 75%; }
+  width: 75%;
+  max-width: 1200px; }
   .graphic-design .image-section .two-images-stagger {
     text-align: center;
     margin-top: -55px; }
@@ -850,7 +854,7 @@ a {
       padding: 270px 14%; }
       .portfolio-page .portfolio-header .text-wrapper h1 {
         font-size: 5em; }
-      .portfolio-page .portfolio-header .text-wrapper p {
+      .portfolio-page .portfolio-header .text-wrapper .type {
         font-size: 2.2em; } }
 
 @media (min-width: 1850px) {
