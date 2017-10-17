@@ -98,10 +98,6 @@ a {
   opacity: 1 !important;
   transition-delay: 0.5s; }
 
-@media (min-width: 1500px) {
-  .navigation {
-    right: 8%; } }
-
 /*
 * === HEADER STYLES ===
 */
@@ -846,6 +842,10 @@ a {
     width: 90%; }
 
 @media (min-width: 1600px) {
+  .portfolio-page .button {
+    width: 220px;
+    margin: 35px 0;
+    font-size: 12em; }
   .portfolio-page .portfolio-header {
     max-height: 1200px; }
     .portfolio-page .portfolio-header .image-wrapper {
@@ -855,7 +855,15 @@ a {
       .portfolio-page .portfolio-header .text-wrapper h1 {
         font-size: 5em; }
       .portfolio-page .portfolio-header .text-wrapper .type {
-        font-size: 2.2em; } }
+        font-size: 1.7em; }
+  .portfolio-page .section .text-wrapper {
+    max-width: 800px;
+    padding: 160px 0px; }
+    .portfolio-page .section .text-wrapper h1 {
+      font-size: 3em; }
+    .portfolio-page .section .text-wrapper p {
+      line-height: 1.6;
+      font-size: 1.2em; } }
 
 @media (min-width: 1850px) {
   .deschutes-river.portfolio-page .portfolio-header .image-wrapper img,
