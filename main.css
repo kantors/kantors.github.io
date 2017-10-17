@@ -874,7 +874,8 @@ a {
     max-height: 800px;
     width: 30%; }
   .zealery.portfolio-page .portfolio-header .image-wrapper {
-    max-height: 800px; } }
+    max-height: 860px;
+    width: 22%; } }
 
 @media only screen and (max-width: 950px) {
   .portfolio-page .info-wrapper {
