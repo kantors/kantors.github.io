@@ -858,7 +858,7 @@ a {
         font-size: 1.7em; }
   .portfolio-page .section .text-wrapper {
     max-width: 800px;
-    padding: 160px 0px; }
+    padding: 160px 0; }
     .portfolio-page .section .text-wrapper h1 {
       font-size: 3em; }
     .portfolio-page .section .text-wrapper p {
@@ -870,10 +870,11 @@ a {
   .macro-market.portfolio-page .portfolio-header .image-wrapper img,
   .music-visualizer.portfolio-page .portfolio-header .image-wrapper img {
     max-width: 1100px; }
-  .graphic-design.portfolio-page .portfolio-header .image-wrapper,
-  .zealery.portfolio-page .portfolio-header .image-wrapper {
+  .graphic-design.portfolio-page .portfolio-header .image-wrapper {
     max-height: 800px;
-    width: 30%; } }
+    width: 30%; }
+  .zealery.portfolio-page .portfolio-header .image-wrapper {
+    max-height: 800px; } }
 
 @media only screen and (max-width: 950px) {
   .portfolio-page .info-wrapper {
