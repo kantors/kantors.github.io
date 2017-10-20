@@ -33,7 +33,21 @@ $(document).ready(function() {
             scrollTop: $("#work-section").offset().top + offset
         }, 700);
     });
+    
+    $('.hideme').each(function(i) {
+        var top_of_object = $(this).offset().top + 10;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
 
+        /* If the object is completely visible in the window, fade it it */
+        if (bottom_of_window > top_of_object) {
+            $(this).delay(200).animate({
+                opacity: 1,
+                top: '0'
+            }, 500);
+
+        }
+
+    });
     /********NAVIGATION ANIMATION********/
     var lastScrollTop = 0;
     $(window).scroll(function() {
