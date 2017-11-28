@@ -21,6 +21,19 @@ p {
 ul li {
     list-style-type: none;
     padding: 7px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-bar {
+  position: fixed;
+  z-index: 2;
+  background: white;
+  width: 100%;
+  top: 0px;
+  -webkit-box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.35);
+box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.35);
 }
 
 .nav-bar ul li {
@@ -31,6 +44,7 @@ ul li {
 
 .button {
     border: 2px solid black;
+    margin-top: 30px;
     width: 200px;
     padding: 15px;
     text-align: center;
@@ -45,11 +59,24 @@ ul li {
 }
 
 .nav-bar ul li:hover {
-    color: blue;
+    color: #3d8cf9;
 }
-
+.header {
+  position: relative;
+  height: 600px;
+}
+.content-wrapper {
+    background: #3d8cf9;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.header-content.content-wrapper {
+    height: 600px;
+}
+.header .content {  padding: 200px 20%;}
 .content {
-    padding: 20px 20%;
+    padding: 150px 20%;
     margin-top: 75px;
     opacity: 0;
     -webkit-transition: margin-top 0.7s ease-in-out, opacity 0.7s ease-in-out;
@@ -57,6 +84,21 @@ ul li {
     -o-transition: margin-top 0.7s ease-in-out, opacity 0.7s ease-in-out;
     transition: margin-top 0.7s ease-in-out, opacity 0.7s ease-in-out;
 }
+
+.section p, .section img {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+.section h2 {
+  font-size: 35px;
+}
+ .section img {
+   width: 40%;
+   padding-left:5%;
+ }
 
 .slide-up {
     margin-top: 0px;
@@ -77,6 +119,10 @@ ul li {
 .solution li {
     padding: 10px;
     list-style-type: none;
+}
+
+.solution li:hover {
+    color: white;
 }
 
 .background-img-wrapper {
