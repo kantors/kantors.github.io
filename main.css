@@ -67,7 +67,7 @@ a {
 }
 .navigation ul {
   padding: 0;
-  width: 185px;
+  width: 220px;
   height: 50px;
   text-align: center;
   -webkit-transition: width 0.3s ease-in-out;
@@ -87,11 +87,11 @@ a {
   list-style-type: none;
   margin: 10px 8px;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.4em;
   display: inline-block;
 }
 .navigation ul li img {
-  height: 31px;
+  height: 36px;
   vertical-align: middle;
 }
 
@@ -453,7 +453,7 @@ a {
   width: 15px;
   vertical-align: super;
   display: inline-block;
-  height: 1px;
+  height: 2px;
   background: black;
   margin: 0 15px;
 }
@@ -586,6 +586,17 @@ a {
 .row.row-full {
   width: 65%;
   margin: 3% auto 5%;
+}
+/* .row-1-col {
+  top: 30px;
+  opacity: 0;
+  position: relative;
+} */
+
+.contact-hide {
+  top: 10px;
+  opacity: 0;
+  position: relative;
 }
 .col-1 {
   flex: 8;

@@ -17,14 +17,20 @@ $(document).ready(function() {
     }, 1400);
     setTimeout(function() {
 
-        $(".navigation").addClass("navigation-visible");
-        $(".header .arrow-wrapper ").addClass("visible-arrow");
+      $(".navigation").addClass("navigation-visible");
+      $(".header .arrow-wrapper ").addClass("visible-arrow");
+        $('.contact-hide').each(function(i) {
+                $(this).delay(200).animate({
+                    opacity: 1,
+                    top: '0'
+                }, 500);
+
+
+
+        });
 
     }, 800);
-    setTimeout(function() {
-        // $(".header .arrow-wrapper .about-me ").addClass("bounce");
 
-    }, 2400);
 
     $("#work-link").click(function() {
         var offset = 20; //Offset of 20px
