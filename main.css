@@ -329,6 +329,17 @@ a {
   .header .header-image {
     width: 120%;
   }
+  #work-section .row {
+    flex-direction: column;
+  }
+  .portfolio .portfolio-item {
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .row.row-full {
+    width: 100% !important;
+    margin: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 610px) {
@@ -839,7 +850,6 @@ a {
   }
   .portfolio #graphic-design img {
     bottom: -120px;
-    width: 70%;
   }
 }
 
