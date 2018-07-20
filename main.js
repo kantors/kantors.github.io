@@ -11,7 +11,7 @@ $(document).ready(function() {
     setTimeout(function() {
         $(".header .text-wrapper .text").css("width", "100%");
 
-    }, 1100);
+    }, 400);
     setTimeout(function() {
         $(".header .sub-text-wrapper .text").css("width", "100%");
     }, 1400);
@@ -20,7 +20,7 @@ $(document).ready(function() {
         $(".navigation").addClass("navigation-visible");
         $(".header .arrow-wrapper ").addClass("visible-arrow");
 
-    }, 2200);
+    }, 800);
     setTimeout(function() {
         // $(".header .arrow-wrapper .about-me ").addClass("bounce");
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
             scrollTop: $("#work-section").offset().top + offset
         }, 700);
     });
-    
+
     $('.hideme').each(function(i) {
         var top_of_object = $(this).offset().top + 10;
         var bottom_of_window = $(window).scrollTop() + $(window).height();
